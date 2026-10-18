@@ -4,7 +4,8 @@ const readChoice=()=>{try{return localStorage.getItem(storageKey)}catch{return n
 const saveChoice=value=>{try{localStorage.setItem(storageKey,value)}catch{}};
 const panel=document.createElement('section');
 panel.className='analytics-consent';
-panel.setAttribute('role','dialog');
+panel.setAttribute('role','region');
+panel.setAttribute('aria-label','Analytics consent');
 panel.setAttribute('aria-labelledby','analytics-consent-title');
 panel.setAttribute('aria-describedby','analytics-consent-description');
 panel.innerHTML='<h2 id="analytics-consent-title">YOUR PRIVACY CHOICE</h2><p id="analytics-consent-description">Google Analytics helps us understand how people use this website. Analytics is off unless you choose to allow it.</p><div class="analytics-consent-actions"><button type="button" data-consent="accept">Accept analytics</button><button type="button" data-consent="reject">Reject</button></div>';
@@ -35,6 +36,7 @@ function choose(value){
   panel.hidden=true;
   settings.hidden=false;
   if(value==='accepted')enableAnalytics();
+  else if(window.ymAnalyticsLoaded)window.gtag('consent','update',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
 }
 panel.addEventListener('click',event=>{
   const choice=event.target.closest('[data-consent]')?.dataset.consent;
