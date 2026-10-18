@@ -5,16 +5,16 @@ const saveChoice=value=>{try{localStorage.setItem(storageKey,value)}catch{}};
 const panel=document.createElement('section');
 panel.className='analytics-consent';
 panel.setAttribute('role','region');
-panel.setAttribute('aria-label','Analytics consent');
+panel.setAttribute('aria-label','Analytics settings');
 panel.setAttribute('aria-labelledby','analytics-consent-title');
 panel.setAttribute('aria-describedby','analytics-consent-description');
-panel.innerHTML=`<h2 id="analytics-consent-title">YOUR PRIVACY CHOICE</h2><p id="analytics-consent-description">Google Analytics helps us understand how people use this website. Analytics is off unless you choose to allow it.</p><p><a href="${new URL('privacy/',document.currentScript.src).href}">Read our privacy notice</a></p><div class="analytics-consent-actions"><button type="button" data-consent="accept">Accept analytics</button><button type="button" data-consent="reject">Reject</button></div>`;
+panel.innerHTML=`<h2 id="analytics-consent-title">ANALYTICS SETTINGS</h2><p id="analytics-consent-description">Analytics runs by default to help us understand how people use this website. You can turn it off at any time.</p><p><a href="${new URL('privacy/',document.currentScript.src).href}">Read our privacy notice</a></p><div class="analytics-consent-actions"><button type="button" data-consent="accept">Keep analytics on</button><button type="button" data-consent="reject">Turn analytics off</button></div>`;
 const settings=document.createElement('button');
 settings.className='analytics-settings';
 settings.id='privacy-settings';
 settings.type='button';
-settings.textContent='Privacy settings';
-settings.setAttribute('aria-label','Change analytics privacy settings');
+settings.textContent='Analytics settings';
+settings.setAttribute('aria-label','Change analytics settings');
 document.body.append(panel,settings);
 function enableAnalytics(){
   if(window.ymAnalyticsLoaded)return;
@@ -46,9 +46,9 @@ panel.addEventListener('click',event=>{
 settings.addEventListener('click',()=>{
   panel.hidden=false;
   settings.hidden=true;
-  panel.querySelector('[data-consent="accept"]').focus();
+  panel.querySelector('[data-consent="reject"]').focus();
 });
 const saved=readChoice();
-if(saved==='accepted'){panel.hidden=true;settings.hidden=false;enableAnalytics()}
-else if(saved==='rejected'){panel.hidden=true;settings.hidden=false}
-else{panel.hidden=false;settings.hidden=true}
+panel.hidden=true;
+settings.hidden=false;
+if(saved!=='rejected')enableAnalytics();
