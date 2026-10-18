@@ -23,7 +23,7 @@
     {
       "title": "Your analytics settings",
       "paragraphs": [
-        "You can turn analytics off at any time using the “Analytics settings” control at the bottom left of the site. Your choice is stored in your browser's local storage and is not sent to Google. If you turn analytics off, the site tells Google to stop analytics storage and does not send further page-view events. You can also clear this site's stored data in your browser."
+        "You can turn analytics off or on at any time on this page under “Analytics settings”. Use the “Privacy & analytics settings” link in the footer to go directly there. Your choice is stored in your browser's local storage and is not sent to Google. If you turn analytics off, the site tells Google to stop analytics storage and does not send further page-view events. You can also clear this site's stored data in your browser."
       ]
     },
     {
