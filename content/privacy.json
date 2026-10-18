@@ -16,21 +16,20 @@
     {
       "title": "Google Analytics 4",
       "paragraphs": [
-        "We use Google Analytics 4 (GA4) to understand how visitors use this website and to improve it. The service is provided by Google. Our measurement ID is G-GLZ0H84MBV.",
-        "If you accept analytics, GA4 can process page views, page addresses, referrer information, browser and device information, interaction data, and pseudonymous identifiers stored in first-party cookies. Google says that Google Analytics does not log or store raw IP addresses; it uses IP information to provide the service and derive general location information. <a href=\"https://support.google.com/analytics/answer/6004245?hl=en\">Google explains the data collected by Analytics</a>."
+        "We use Google Analytics 4 (GA4) to understand how visitors use this website and to improve it. Analytics runs by default when you visit the website. The service is provided by Google. Our measurement ID is G-GLZ0H84MBV.",
+        "GA4 can process page views, page addresses, referrer information, browser and device information, interaction data, and pseudonymous identifiers stored in first-party cookies. Google says that Google Analytics does not log or store raw IP addresses; it uses IP information to provide the service and derive general location information. <a href=\"https://support.google.com/analytics/answer/6004245?hl=en\">Google explains the data collected by Analytics</a>."
       ]
     },
     {
-      "title": "Consent and choice",
+      "title": "Your analytics settings",
       "paragraphs": [
-        "Analytics is optional. The Google tag is not loaded and no analytics data is sent before you accept. Your choice is stored in your browser's local storage so the site can remember it; this preference stays on your device and is not sent to Google.",
-        "You can reject analytics or withdraw a previous choice at any time using the “Privacy settings” control at the bottom left of the site. If you withdraw consent, the site tells Google to stop analytics storage and does not send further page-view events. You can also clear this site's stored data in your browser."
+        "You can turn analytics off at any time using the “Analytics settings” control at the bottom left of the site. Your choice is stored in your browser's local storage and is not sent to Google. If you turn analytics off, the site tells Google to stop analytics storage and does not send further page-view events. You can also clear this site's stored data in your browser."
       ]
     },
     {
       "title": "Google, transfers, and retention",
       "paragraphs": [
-        "When you accept analytics, data is transmitted to Google. Google may process data on servers outside Switzerland. Information about Google's privacy practices and international data transfers is available in <a href=\"https://policies.google.com/privacy\">Google's Privacy Policy</a> and <a href=\"https://policies.google.com/privacy/frameworks\">Google's information about data transfers</a>.",
+        "When analytics is active, data is transmitted to Google. Google may process data on servers outside Switzerland. Information about Google's privacy practices and international data transfers is available in <a href=\"https://policies.google.com/privacy\">Google's Privacy Policy</a> and <a href=\"https://policies.google.com/privacy/frameworks\">Google's information about data transfers</a>.",
         "Google Analytics user-level and event-level data is retained according to the retention setting configured for this GA4 property. See <a href=\"https://support.google.com/analytics/answer/7667196?hl=en\">Google's data-retention documentation</a>."
       ]
     },
