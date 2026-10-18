@@ -33,13 +33,15 @@ npm run build
 
 ## Inhalte ändern
 
-- `content/site.json`: Alle Texte, Chronologien, Einträge und Medienzuordnungen. Die NEWS-Chronik enthält auch das bisherige LOG-Archiv.
+- `content/site.json`: Texte, Chronologien, Einträge und Medienzuordnungen der Seiten.
+- `content/privacy.json`: Datenschutzhinweis für Google Analytics 4. Die NEWS-Chronik enthält auch das bisherige LOG-Archiv.
 - `public/media/`: Lokale Medien. Vorhandene Bilder liegen in mehreren WebP-Größen vor; GIF-Animationen werden durch kompakte MP4-Schleifen ersetzt.
 - `public/fonts/`: Selbst gehostete Oswald-Schrift samt Lizenz.
 - `public/site.css`: Gestaltung und responsive Layouts.
 - `public/fidelity.css`: Originalgetreue Schrift-, Bewegungs- und Layoutregeln aus der WordPress-Referenz.
 - `public/site.js`: Menü, Galerie, Film-Dialoge und bedarfsgesteuerte Videos.
-- `public/consent.js` und `public/consent.css`: Einwilligungssteuerung für Google Analytics 4. Die Mess-ID steht in `public/consent.js`; das Tag wird erst nach aktiver Zustimmung geladen.
+- `public/consent.js` und `public/consent.css`: Einwilligungssteuerung und Gestaltung für Google Analytics 4. Die Mess-ID steht in `public/consent.js`; das Tag wird erst nach aktiver Zustimmung geladen.
+- `privacy/`: Statisch generierte Datenschutzerklärung, mit der Consent-Verwaltung auf allen Seiten verlinkt.
 - `tools/build.mjs`: Erzeugt die vollständigen HTML-Seiten in `dist/`.
 
 Die einmalige Migration ist in `tools/import.mjs` dokumentiert. Sie wird **nicht** beim Bauen oder Veröffentlichen ausgeführt. Für die fertige Website wird die alte WordPress-Installation nicht benötigt.
