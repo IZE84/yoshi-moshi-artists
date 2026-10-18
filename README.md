@@ -1,6 +1,6 @@
 # Yoshi + Moshi — eigenständige Website
 
-Statische, WordPress-unabhängige Version der aktuellen Künstlerwebsite. Die Website verwendet ausschließlich HTML, CSS und kleines natives JavaScript. Keine Datenbank, kein PHP, kein Framework, keine Plugins und keine externen Schrift- oder Tracking-Anfragen.
+Statische, WordPress-unabhängige Version der aktuellen Künstlerwebsite. Die Website verwendet ausschließlich HTML, CSS und kleines natives JavaScript. Keine Datenbank, kein PHP, kein Framework, keine Plugins und keine externen Schriftanfragen. Google Analytics 4 wird erst nach aktiver Zustimmung geladen.
 
 ## Lokal ansehen
 
