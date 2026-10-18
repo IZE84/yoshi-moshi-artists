@@ -39,6 +39,7 @@ npm run build
 - `public/site.css`: Gestaltung und responsive Layouts.
 - `public/fidelity.css`: Originalgetreue Schrift-, Bewegungs- und Layoutregeln aus der WordPress-Referenz.
 - `public/site.js`: Menü, Galerie, Film-Dialoge und bedarfsgesteuerte Videos.
+- `public/consent.js` und `public/consent.css`: Einwilligungssteuerung für Google Analytics 4. Die Mess-ID steht in `public/consent.js`; das Tag wird erst nach aktiver Zustimmung geladen.
 - `tools/build.mjs`: Erzeugt die vollständigen HTML-Seiten in `dist/`.
 
 Die einmalige Migration ist in `tools/import.mjs` dokumentiert. Sie wird **nicht** beim Bauen oder Veröffentlichen ausgeführt. Für die fertige Website wird die alte WordPress-Installation nicht benötigt.
@@ -53,7 +54,7 @@ Der anschließende visuelle Abgleich und die Referenzmaße sind in `FIDELITY.md`
 - Native Dialoge mit Tastaturbedienung, Escape-Schließen und Fokusverwaltung.
 - Responsive, exakt zentrierte Navigation, die von oben herunterkommt.
 - Rücksicht auf reduzierte Bewegung und Datensparmodus.
-- Kein WordPress-/Enfold-Code, keine jQuery-Abhängigkeit, kein Analytics und keine Cookie-Banner-Abhängigkeit.
+- Kein WordPress-/Enfold-Code, keine jQuery-Abhängigkeit und keine Cookie-Banner-Abhängigkeit. Google Analytics 4 wird erst nach Zustimmung geladen; die Auswahl lässt sich über „Privacy settings“ ändern.
 - Metadaten, Sprachangabe, Favicon, robots.txt, optionale Sitemap und GitHub-Pages-Workflow.
 
 Alle künstlerischen Inhalte und Medien bleiben Eigentum ihrer jeweiligen Rechteinhaber. Die Oswald-Schrift steht unter der beiliegenden SIL Open Font License.
