@@ -8,6 +8,12 @@
       ]
     },
     {
+      "title": "Web hosting",
+      "paragraphs": [
+        "This website is published through METANET AG. To deliver and protect the website, the hosting provider may process technical connection data such as the IP address, time of access, requested resource, and browser information in server logs. For more information, see <a href=\"https://www.metanet.ch/de/ueber-metanet/datenschutzerklaerung\">METANET's privacy notice</a>."
+      ]
+    },
+    {
       "title": "Google Analytics 4",
       "paragraphs": [
         "We use Google Analytics 4 (GA4) to understand how visitors use this website and to improve it. The service is provided by Google. Our measurement ID is G-GLZ0H84MBV.",
