@@ -8,7 +8,7 @@ panel.setAttribute('role','region');
 panel.setAttribute('aria-label','Analytics consent');
 panel.setAttribute('aria-labelledby','analytics-consent-title');
 panel.setAttribute('aria-describedby','analytics-consent-description');
-panel.innerHTML='<h2 id="analytics-consent-title">YOUR PRIVACY CHOICE</h2><p id="analytics-consent-description">Google Analytics helps us understand how people use this website. Analytics is off unless you choose to allow it.</p><div class="analytics-consent-actions"><button type="button" data-consent="accept">Accept analytics</button><button type="button" data-consent="reject">Reject</button></div>';
+panel.innerHTML=`<h2 id="analytics-consent-title">YOUR PRIVACY CHOICE</h2><p id="analytics-consent-description">Google Analytics helps us understand how people use this website. Analytics is off unless you choose to allow it.</p><p><a href="${new URL('privacy/',document.currentScript.src).href}">Read our privacy notice</a></p><div class="analytics-consent-actions"><button type="button" data-consent="accept">Accept analytics</button><button type="button" data-consent="reject">Reject</button></div>`;
 const settings=document.createElement('button');
 settings.className='analytics-settings';
 settings.id='privacy-settings';
