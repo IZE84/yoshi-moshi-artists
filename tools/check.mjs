@@ -35,6 +35,10 @@ if(!data.performances.entries.length)errors.push('No performances imported');
 async function walk(dir){let result=[];for(const e of await fs.readdir(dir,{withFileTypes:true})){const f=path.join(dir,e.name);if(e.isDirectory())result.push(...await walk(f));else result.push({path:f,size:(await fs.stat(f)).size});}return result;}
 const files=await walk(dist);
 for(const f of files)if(f.size>=100*1024*1024)errors.push(`File exceeds GitHub limit: ${path.relative(dist,f.path)}`);
+const consentScript=await fs.readFile(path.join(dist,'consent.js'),'utf8');
+if(!/^\(\(\)=>\{/.test(consentScript))errors.push('Analytics consent script must use a private scope');
+if(!consentScript.includes("G-GLZ0H84MBV"))errors.push('Analytics consent script has the wrong measurement ID');
+if(/\bconst toggle\b/.test(consentScript))errors.push('Analytics consent script conflicts with the site menu toggle');
 const sourceFiles=files.filter(f=>/\.(html|css|js)$/.test(f.path));
 console.log(`${routes.length} pages, ${checked} local references checked, ${files.length} files, ${(files.reduce((n,f)=>n+f.size,0)/1024/1024).toFixed(1)} MiB total.`);
 console.log(`HTML/CSS/JS: ${(sourceFiles.reduce((n,f)=>n+f.size,0)/1024).toFixed(1)} KiB across the entire site.`);
