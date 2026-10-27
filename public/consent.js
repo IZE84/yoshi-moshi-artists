@@ -1,3 +1,4 @@
+(()=>{
 const measurementId='G-GLZ0H84MBV';
 const storageKey='ym-analytics-consent-v1';
 const readChoice=()=>{try{return localStorage.getItem(storageKey)}catch{return null}};
@@ -18,13 +19,13 @@ function enableAnalytics(){
   script.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(measurementId);
   document.head.append(script);
 }
-const toggle=document.getElementById('analytics-toggle');
+const analyticsToggle=document.getElementById('analytics-toggle');
 const status=document.getElementById('analytics-settings-status');
 function updateControl(){
-  if(toggle)toggle.textContent=readChoice()==='rejected'?'Turn analytics on':'Turn analytics off';
+  if(analyticsToggle)analyticsToggle.textContent=readChoice()==='rejected'?'Turn analytics on':'Turn analytics off';
 }
-if(toggle){
-  toggle.addEventListener('click',()=>{
+if(analyticsToggle){
+  analyticsToggle.addEventListener('click',()=>{
     if(readChoice()==='rejected'){
       saveChoice('accepted');
       enableAnalytics();
@@ -39,3 +40,4 @@ if(toggle){
   updateControl();
 }
 if(readChoice()!=='rejected')enableAnalytics();
+})();
