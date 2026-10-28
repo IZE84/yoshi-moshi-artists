@@ -7,6 +7,42 @@
     "panel": "<p>Yoshi + Moshi keep showing up. In exhibitions, in films, and sometimes where you least expect them. Not everything makes the news, but some things make it here. Anyway, a few updates below.</p>",
     "entries": [
       {
+        "imagePosition": "right",
+        "html": "<p>Big Y+M news: In the spring of 2027, we'll be performing eight shows over four days at a major music and culture festival with 25,000 visitors. It's going to be incredible!</p>",
+        "media": [
+          {
+            "type": "image",
+            "alt": "Yoshi and Moshi seated with a white, gold-horned character in a blue and yellow lounge.",
+            "src": "media/yoshi-moshi-festival-2027-1920.webp",
+            "width": 1920,
+            "height": 1276,
+            "variants": [
+              {
+                "src": "media/yoshi-moshi-festival-2027-360.webp",
+                "width": 360,
+                "bytes": 19122
+              },
+              {
+                "src": "media/yoshi-moshi-festival-2027-720.webp",
+                "width": 720,
+                "bytes": 51462
+              },
+              {
+                "src": "media/yoshi-moshi-festival-2027-1200.webp",
+                "width": 1200,
+                "bytes": 96872
+              },
+              {
+                "src": "media/yoshi-moshi-festival-2027-1920.webp",
+                "width": 1920,
+                "bytes": 157782
+              }
+            ],
+            "originalBytes": 1103394
+          }
+        ]
+      },
+      {
         "html": "<p>LE LATITUDINI DELL’ARTE / tappa svizzera<br>\n10 october – 28 november 2026</p>\n<p>opening saturday 10 october 5.00pm</p>\n<p>exhibition opening hours<br>\nfriday to sunday 2.00 pm to 6.00pm</p>\n<p>Villa Santa Lucia, via Santa Lucia, Melano, Val Mara</p>\n<p>\n</p>",
         "media": [
           {
@@ -74,7 +110,8 @@
             ],
             "originalBytes": 589469
           }
-        ]
+        ],
+        "imagePosition": "right"
       },
       {
         "html": "<p>solo show “THE TOWER” (with Nina Staehli)</p>\n<p>with our new film!</p>\n<p>05 – 28 November 2025</p>\n<p><a href=\"https://www.proyectoace.org/en/artistas/nina-staehli-2/\" target=\"_blank\" rel=\"noopener noreferrer\"><span>Proyecto’ace</span></a>, Buenos Aires (ARG)</p>\n<p>\n</p>",
@@ -144,7 +181,8 @@
             ],
             "originalBytes": 1102864
           }
-        ]
+        ],
+        "imagePosition": "right"
       },
       {
         "html": "<p><strong>OCCUPY SUPERBA<br>\n</strong>performance, installation + film<strong><br>\n</strong>6th Biennale Le Latitudini dell’Arte<br>\nItalia &amp;&nbsp; Svizzera edition</p>\n<p>opening 01 August 2024, 6pm<br>\n02 August – 08 September 2024</p>\n<p>GALATA Museo del Mare, Genoa, Italy</p>",
@@ -190,7 +228,8 @@
             ],
             "originalBytes": 1958403
           }
-        ]
+        ],
+        "imagePosition": "right"
       },
       {
         "html": "<p><strong>YOSHI + MOSHI</strong><br>\nThe Comeback Tour</p>\n<p>exhibition<br>\nperformance<br>\nautograph session<br>\nworld tour movie</p>\n<p>October 2023</p>\n<p>Bar delle Vigne, Vico dei Greci, 4, Genoa, Italy</p>",
@@ -225,7 +264,8 @@
             ],
             "originalBytes": 2661310
           }
-        ]
+        ],
+        "imagePosition": "right"
       },
       {
         "html": "<p><strong><a href=\"https://alethornton.wixsite.com/athornton\" target=\"_blank\" rel=\"noopener noreferrer\"><span>ALEJANDRO THORNTON</span></a> + YOSHI</strong><br>\n<span><a href=\"https://palaisdeglace.cultura.gob.ar/noticia/artistas-seleccionadxs-del-salon-nacional-de-artes-visuales-2023/\" target=\"_blank\" rel=\"noopener noreferrer\">Selected artists of the National Visual Arts Salon of Argentina 2023</a></span></p>\n<p>Alejandro Thornton, Buenos Aires (ARG) is among the best artists 2023 in Argentina. And Yoshi has a starring role in the new “Háblame” film that Alejandro will show in the exhibition. That’s how it goes!</p>\n<p>September&nbsp; – December 2023</p>",
@@ -295,7 +335,8 @@
             ],
             "originalBytes": 1035128
           }
-        ]
+        ],
+        "imagePosition": "right"
       },
       {
         "html": "<p>Performance evening with <strong>Yoshi + Moshi</strong>, Daniel Häller/Christof Zurbuchen and Rochus Lussi, curated by Rochus Lussi.</p>\n<p><strong>“Universo Immersivo” </strong>Yoshi+ Moshi (Chiasso TI, Switzerland)</p>\n<p>The performance “Universo Immersivo” explores the tension between the informative overflow, the dissolution of time and the aesthetics of deceleration. The performers Yoshi + Moshi dive with us into their hyperreality, changing the course of things.</p>\n<p>Museum of Nidwalden, Stans, Switzerland / Happen 6 , Thursday, September 1, 2022</p>\n<p>article on<span><strong> <a href=\"media/Nidwaldner-Museum-Nina-Staehli-Yoshi-Moshi-3e58c3a33c5d.pdf\" target=\"_blank\" rel=\"noopener\">luzerner zeitung</a></strong></span></p>\n<p>arttv.ch “<a href=\"https://arttv.ch/kunst/nidwaldner-museum-som-mer-im-mu-se-um/\" target=\"_blank\" rel=\"noopener noreferrer\"><strong><span>summer in the museum</span></strong></a>”</p>",
@@ -336,7 +377,8 @@
             "bytes": 462935,
             "alt": "Yoshi + Moshi film montage for the monograph"
           }
-        ]
+        ],
+        "imagePosition": "right"
       }
     ]
   },

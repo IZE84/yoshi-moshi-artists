@@ -39,8 +39,8 @@ h1{font-weight:800;letter-spacing:-.02em;line-height:.78}
 .page-about .dot-two{left:calc(50% + (min(19vw,340px) + clamp(4.5rem,6vw,6.75rem) + 80px)))!important;right:auto}
 .news-entry{display:block}
 .news-entry-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,100px)}
-.news-entry:is(:nth-child(2),:nth-child(4),:nth-child(6),:nth-child(7),:nth-child(9),:nth-child(11)) .news-media{order:2}
-.news-entry:is(:nth-child(2),:nth-child(4),:nth-child(6),:nth-child(7),:nth-child(9),:nth-child(11)) .news-copy{order:1}
+.news-entry.news-image-right .news-media{order:2}
+.news-entry.news-image-right .news-copy{order:1}
 .news-copy{font-size:clamp(1.15rem,2vw,1.65rem);line-height:1.35}
 .news-copy p{margin-bottom:18px}
 .performance-card{padding:0;margin:0;gap:16px}
