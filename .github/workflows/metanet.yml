@@ -33,18 +33,16 @@ jobs:
       - run: npm run check
 
       - name: Publish generated site to metanet branch
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
           deploy_dir="$RUNNER_TEMP/metanet"
-          mkdir -p "$deploy_dir"
-          cp -a dist/. "$deploy_dir/"
-          cd "$deploy_dir"
-          git init
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b metanet
-          git add --all
-          git commit -m "Deploy ${GITHUB_SHA}"
-          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git push --force origin metanet
+          git fetch origin metanet
+          git worktree add --detach "$deploy_dir" FETCH_HEAD
+          git -C "$deploy_dir" config user.name "github-actions[bot]"
+          git -C "$deploy_dir" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$deploy_dir" --work-tree="$GITHUB_WORKSPACE/dist" add --all
+          if git -C "$deploy_dir" diff --cached --quiet; then
+            echo "Generated website is already up to date."
+          else
+            git -C "$deploy_dir" commit -m "Deploy ${GITHUB_SHA}"
+            git -C "$deploy_dir" push origin HEAD:metanet
+          fi
