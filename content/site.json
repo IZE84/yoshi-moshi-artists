@@ -383,133 +383,10 @@
     ]
   },
   "performances": {
-    "kicker": "YOSHI + MOSHI / LIVE SCORE",
+    "kicker": "YOSHI + MOSHI / PERFORMANCES",
     "title": "PERFORMANCES",
-    "lede": "Bodies in motion. New formats. No two nights the same.",
-    "panel": "<p>Yoshi + Moshi have come to stay. They can’t meet all your expectations, but they get better in the process. Most of the time, at least. Of course they have performance formats but usually they do something brand new. Anyway, a few snippets below.</p>",
-    "entries": [
-      {
-        "title": "autograph sessions",
-        "html": "<h2>autograph sessions</h2>",
-        "media": [
-          {
-            "type": "image",
-            "alt": "Yoshi + Moshi",
-            "src": "media/performance-1-b32300dfaf7a-poster.webp",
-            "width": 600,
-            "height": 338,
-            "originalBytes": 5192105,
-            "video": {
-              "src": "media/performance-1-b32300dfaf7a.mp4",
-              "bytes": 395804
-            },
-            "poster": {
-              "src": "media/performance-1-b32300dfaf7a-poster.webp",
-              "width": 600,
-              "height": 338
-            }
-          }
-        ]
-      },
-      {
-        "title": "tribute to yoshi + moshi",
-        "html": "<h2>tribute to yoshi + moshi</h2>",
-        "media": [
-          {
-            "type": "image",
-            "alt": "Yoshi + Moshi",
-            "src": "media/tribute-yoshi-moshi-495x400-586ce76210c4-poster.webp",
-            "width": 495,
-            "height": 400,
-            "originalBytes": 116124,
-            "video": {
-              "src": "media/tribute-yoshi-moshi-495x400-586ce76210c4.mp4",
-              "bytes": 23390
-            },
-            "poster": {
-              "src": "media/tribute-yoshi-moshi-495x400-586ce76210c4-poster.webp",
-              "width": 495,
-              "height": 400
-            }
-          }
-        ]
-      },
-      {
-        "title": "universo immersivo",
-        "html": "<h2>universo immersivo</h2>",
-        "media": [
-          {
-            "type": "image",
-            "alt": "Yoshi + Moshi",
-            "src": "media/yoshi-moshi-universo-immersivo-new-2-4fdfbcad61f2-poster.webp",
-            "width": 484,
-            "height": 338,
-            "originalBytes": 4491353,
-            "video": {
-              "src": "media/yoshi-moshi-universo-immersivo-new-2-4fdfbcad61f2.mp4",
-              "bytes": 195859
-            },
-            "poster": {
-              "src": "media/yoshi-moshi-universo-immersivo-new-2-4fdfbcad61f2-poster.webp",
-              "width": 484,
-              "height": 338
-            }
-          }
-        ]
-      },
-      {
-        "title": "culture clash",
-        "html": "<h2>culture clash</h2>",
-        "media": [
-          {
-            "type": "image",
-            "alt": "Yoshi + Moshi",
-            "src": "media/culture-clash-bbe821e56dbd-poster.webp",
-            "width": 600,
-            "height": 338,
-            "originalBytes": 1631469,
-            "video": {
-              "src": "media/culture-clash-bbe821e56dbd.mp4",
-              "bytes": 86220
-            },
-            "poster": {
-              "src": "media/culture-clash-bbe821e56dbd-poster.webp",
-              "width": 600,
-              "height": 338
-            }
-          }
-        ]
-      },
-      {
-        "title": "idée reçue",
-        "html": "<h2>idée reçue</h2>",
-        "media": [
-          {
-            "type": "image",
-            "alt": "Yoshi + Moshi",
-            "src": "media/idee-710x375-ac41a5367957-poster.webp",
-            "width": 710,
-            "height": 375,
-            "originalBytes": 187082,
-            "video": {
-              "src": "media/idee-710x375-ac41a5367957.mp4",
-              "bytes": 29759
-            },
-            "poster": {
-              "src": "media/idee-710x375-ac41a5367957-poster.webp",
-              "width": 710,
-              "height": 375
-            }
-          }
-        ]
-      }
-    ]
-  },
-  "films": {
-    "kicker": "YOSHI + MOSHI / MOVING",
-    "title": "FILMS",
-    "lede": "Short films, live moments and moving<br>images.",
-    "panel": "<p>Yoshi + Moshi keep moving. Sometimes on stage, sometimes on screen, and sometimes without much of a plan. Not every moment makes it into a film, but a few do. Anyway, press play and see what happens.</p>",
+    "lede": "Big heads, big shows and anything can happen",
+    "panel": "<p>No words and big ideas. Yoshi + Moshi take the stage, the street or wherever they’re not expected. Things go wrong or wonderfully right. The audience becomes part of the show and nobody knows who's performing for whom.</p>",
     "entries": [
       {
         "title": "The Comeback Tour, autograph session, Genoa (IT)",
@@ -655,6 +532,347 @@
           "src": "media/yoshi-moshi-culture-clash-performance-kunstpause-mp4-loop-8a1162b0e06f.mp4",
           "bytes": 224887
         }
+      }
+    ]
+  },
+  "films": {
+    "kicker": "YOSHI + MOSHI / FILMS",
+    "title": "FILMS",
+    "lede": "Big heads, big ideas and short films",
+    "panel": "<p>Big heads, bigger ideas and a flair for drama. Yoshi + Moshi turn their wildest ambitions into films, without saying a word but with plenty to tell.</p>",
+    "entries": [
+      {
+        "title": "Chou de Voltaire, Zug (CH)",
+        "alt": "Yoshi and Moshi tending cabbages beside a lake.",
+        "src": "media/film-still-01-1920.webp",
+        "width": 1920,
+        "height": 1277,
+        "variants": [
+          {
+            "src": "media/film-still-01-360.webp",
+            "width": 360,
+            "bytes": 22328
+          },
+          {
+            "src": "media/film-still-01-720.webp",
+            "width": 720,
+            "bytes": 82354
+          },
+          {
+            "src": "media/film-still-01-1200.webp",
+            "width": 1200,
+            "bytes": 214136
+          },
+          {
+            "src": "media/film-still-01-1920.webp",
+            "width": 1920,
+            "bytes": 440732
+          }
+        ]
+      },
+      {
+        "title": "Culture Clash, Berlin (GER)",
+        "alt": "Yoshi and Moshi seated at a table with a dog and balloons.",
+        "src": "media/film-still-02-1920.webp",
+        "width": 1920,
+        "height": 1081,
+        "variants": [
+          {
+            "src": "media/film-still-02-360.webp",
+            "width": 360,
+            "bytes": 12746
+          },
+          {
+            "src": "media/film-still-02-720.webp",
+            "width": 720,
+            "bytes": 38578
+          },
+          {
+            "src": "media/film-still-02-1200.webp",
+            "width": 1200,
+            "bytes": 79840
+          },
+          {
+            "src": "media/film-still-02-1920.webp",
+            "width": 1920,
+            "bytes": 135344
+          }
+        ]
+      },
+      {
+        "title": "Enigma Code, Chiasso (CH)",
+        "alt": "Yoshi and Moshi holding hands in a railway yard.",
+        "src": "media/film-still-03-1920.webp",
+        "width": 1920,
+        "height": 1080,
+        "variants": [
+          {
+            "src": "media/film-still-03-360.webp",
+            "width": 360,
+            "bytes": 17204
+          },
+          {
+            "src": "media/film-still-03-720.webp",
+            "width": 720,
+            "bytes": 61684
+          },
+          {
+            "src": "media/film-still-03-1200.webp",
+            "width": 1200,
+            "bytes": 143884
+          },
+          {
+            "src": "media/film-still-03-1920.webp",
+            "width": 1920,
+            "bytes": 273668
+          }
+        ]
+      },
+      {
+        "title": "EXIT RIGHT, Ligornetto (CH)",
+        "alt": "Five characters wearing blue suits seated in a row.",
+        "src": "media/film-still-11-1920.webp",
+        "width": 1920,
+        "height": 1080,
+        "variants": [
+          {
+            "src": "media/film-still-11-360.webp",
+            "width": 360,
+            "bytes": 13176
+          },
+          {
+            "src": "media/film-still-11-720.webp",
+            "width": 720,
+            "bytes": 41908
+          },
+          {
+            "src": "media/film-still-11-1200.webp",
+            "width": 1200,
+            "bytes": 94802
+          },
+          {
+            "src": "media/film-still-11-1920.webp",
+            "width": 1920,
+            "bytes": 187174
+          }
+        ]
+      },
+      {
+        "title": "FACE YOSHI, Fano (IT)",
+        "alt": "Moshi holding flags on a lifeguard chair by the sea.",
+        "src": "media/film-still-04-1181.webp",
+        "width": 1181,
+        "height": 886,
+        "variants": [
+          {
+            "src": "media/film-still-04-360.webp",
+            "width": 360,
+            "bytes": 15596
+          },
+          {
+            "src": "media/film-still-04-720.webp",
+            "width": 720,
+            "bytes": 49334
+          },
+          {
+            "src": "media/film-still-04-1181.webp",
+            "width": 1181,
+            "bytes": 109488
+          }
+        ]
+      },
+      {
+        "title": "Háblame, Buenos Aires (ARG)",
+        "alt": "Yoshi seated beside a box marked with a red cross in a cavern.",
+        "src": "media/film-still-05-1920.webp",
+        "width": 1920,
+        "height": 1440,
+        "variants": [
+          {
+            "src": "media/film-still-05-360.webp",
+            "width": 360,
+            "bytes": 16658
+          },
+          {
+            "src": "media/film-still-05-720.webp",
+            "width": 720,
+            "bytes": 57858
+          },
+          {
+            "src": "media/film-still-05-1200.webp",
+            "width": 1200,
+            "bytes": 162500
+          },
+          {
+            "src": "media/film-still-05-1920.webp",
+            "width": 1920,
+            "bytes": 406708
+          }
+        ]
+      },
+      {
+        "title": "Homeless, Hossegor (FR)",
+        "alt": "Yoshi and Moshi seated beside a television in a forest car park.",
+        "src": "media/film-still-12-1920.webp",
+        "width": 1920,
+        "height": 1277,
+        "variants": [
+          {
+            "src": "media/film-still-12-360.webp",
+            "width": 360,
+            "bytes": 22648
+          },
+          {
+            "src": "media/film-still-12-720.webp",
+            "width": 720,
+            "bytes": 109424
+          },
+          {
+            "src": "media/film-still-12-1200.webp",
+            "width": 1200,
+            "bytes": 325996
+          },
+          {
+            "src": "media/film-still-12-1920.webp",
+            "width": 1920,
+            "bytes": 756592
+          }
+        ]
+      },
+      {
+        "title": "Last Suppe, Zug (CH)",
+        "alt": "Four characters seated together on a table in a gallery.",
+        "src": "media/film-still-06-1181.webp",
+        "width": 1181,
+        "height": 665,
+        "variants": [
+          {
+            "src": "media/film-still-06-360.webp",
+            "width": 360,
+            "bytes": 14162
+          },
+          {
+            "src": "media/film-still-06-720.webp",
+            "width": 720,
+            "bytes": 39462
+          },
+          {
+            "src": "media/film-still-06-1181.webp",
+            "width": 1181,
+            "bytes": 77466
+          }
+        ]
+      },
+      {
+        "title": "LOST LOST, Labenne (FR)",
+        "alt": "Yoshi and Moshi resting on a beach beside the ocean.",
+        "src": "media/film-still-07-1024.webp",
+        "width": 1024,
+        "height": 578,
+        "variants": [
+          {
+            "src": "media/film-still-07-360.webp",
+            "width": 360,
+            "bytes": 6212
+          },
+          {
+            "src": "media/film-still-07-720.webp",
+            "width": 720,
+            "bytes": 13564
+          },
+          {
+            "src": "media/film-still-07-1024.webp",
+            "width": 1024,
+            "bytes": 22020
+          }
+        ]
+      },
+      {
+        "title": "Occupy ORF – A feast for Yoshi + Moshi, ORF III, Vienna (AT)",
+        "alt": "A group of eight characters seated in an orange-lit lounge.",
+        "src": "media/film-still-08-1920.webp",
+        "width": 1920,
+        "height": 1080,
+        "variants": [
+          {
+            "src": "media/film-still-08-360.webp",
+            "width": 360,
+            "bytes": 17782
+          },
+          {
+            "src": "media/film-still-08-720.webp",
+            "width": 720,
+            "bytes": 59188
+          },
+          {
+            "src": "media/film-still-08-1200.webp",
+            "width": 1200,
+            "bytes": 148500
+          },
+          {
+            "src": "media/film-still-08-1920.webp",
+            "width": 1920,
+            "bytes": 288644
+          }
+        ]
+      },
+      {
+        "title": "THE TOWER, Ligornetto (CH)",
+        "alt": "An inverted-colour view of Moshi on a staircase.",
+        "src": "media/film-still-09-1920.webp",
+        "width": 1920,
+        "height": 1280,
+        "variants": [
+          {
+            "src": "media/film-still-09-360.webp",
+            "width": 360,
+            "bytes": 5024
+          },
+          {
+            "src": "media/film-still-09-720.webp",
+            "width": 720,
+            "bytes": 12136
+          },
+          {
+            "src": "media/film-still-09-1200.webp",
+            "width": 1200,
+            "bytes": 23690
+          },
+          {
+            "src": "media/film-still-09-1920.webp",
+            "width": 1920,
+            "bytes": 44792
+          }
+        ]
+      },
+      {
+        "title": "YOSHI + MOSHI – Movie World Tour, Genoa (IT)",
+        "alt": "Yoshi and Moshi signing cards for visitors in a bar.",
+        "src": "media/film-still-10-1920.webp",
+        "width": 1920,
+        "height": 1280,
+        "variants": [
+          {
+            "src": "media/film-still-10-360.webp",
+            "width": 360,
+            "bytes": 20764
+          },
+          {
+            "src": "media/film-still-10-720.webp",
+            "width": 720,
+            "bytes": 63040
+          },
+          {
+            "src": "media/film-still-10-1200.webp",
+            "width": 1200,
+            "bytes": 145744
+          },
+          {
+            "src": "media/film-still-10-1920.webp",
+            "width": 1920,
+            "bytes": 351986
+          }
+        ]
       }
     ]
   },

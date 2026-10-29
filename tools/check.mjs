@@ -27,9 +27,17 @@ for(const route of routes){
     checked++;
   }
   if(route==='pictures'&&$('[data-gallery]').length!==data.pictures.entries.length)errors.push('Gallery count does not match imported content');
-  if(route==='films'&&$('[data-film]').length!==data.films.entries.length)errors.push('Film count does not match imported content');
+  if(route==='films'){
+    if($('[data-gallery]').length!==data.films.entries.length)errors.push('Film still count does not match imported content');
+    if($('[data-film],video').length)errors.push('Film still gallery must not contain the moved performance videos');
+    $('.film-still').each((i,element)=>{
+      if(!data.films.entries[i]?.title)errors.push(`Film still ${i+1} is missing its film title`);
+      if($(element).find('.film-title').text()!==data.films.entries[i]?.title)errors.push(`Film still ${i+1} has the wrong caption`);
+    });
+  }
   if(route==='news'&&$('.news-entry').length!==data.news.entries.length)errors.push('News count does not match imported content');
   if(route==='performances'&&$('.performance-card').length!==data.performances.entries.length)errors.push('Performance count does not match imported content');
+  if(route==='performances'&&$('[data-film]').length!==data.performances.entries.length)errors.push('Every performance video must remain playable');
 }
 if(!data.performances.entries.length)errors.push('No performances imported');
 async function walk(dir){let result=[];for(const e of await fs.readdir(dir,{withFileTypes:true})){const f=path.join(dir,e.name);if(e.isDirectory())result.push(...await walk(f));else result.push({path:f,size:(await fs.stat(f)).size});}return result;}

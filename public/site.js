@@ -118,6 +118,7 @@ soundToggle.addEventListener('click',()=>{
 let filmIndex=0;
 function showFilm(next){
   if(!films.length)return;
+  dialog.classList.remove('is-still');
   filmIndex=Math.max(0,Math.min(next,films.length-1));
   const button=films[filmIndex];
   const previous=content.querySelector('video');
@@ -153,9 +154,11 @@ async function showPhoto(next){
   try{await img.decode();}catch{return false;}
   if(request!==photoRequest)return false;
   content.replaceChildren(img);
-  title.textContent=img.alt || 'Yoshi + Moshi';
+  title.textContent=item.dataset.title || img.alt || 'Yoshi + Moshi';
+  dialog.classList.toggle('is-still',item.classList.contains('film-still'));
   dialog.querySelector('.gallery-controls span').textContent=`${index+1} / ${gallery.length}`;
   dialog.querySelectorAll('[data-direction]').forEach(button=>{
+    button.setAttribute('aria-label',Number(button.dataset.direction)<0?'Previous image':'Next image');
     button.disabled=Number(button.dataset.direction)<0?index===0:index===gallery.length-1;
   });
 }
@@ -166,11 +169,24 @@ gallery.forEach((item,i)=>item.addEventListener('click',async event=>{
 }));
 dialog.querySelectorAll('[data-direction]').forEach(b=>b.addEventListener('click',()=>navigateMedia(Number(b.dataset.direction))));
 content.addEventListener('click',event=>{
+  if(Date.now()-lastPhotoSwipe<400)return;
   if(!['IMG','VIDEO'].includes(event.target.tagName))return;
   const bounds=event.target.getBoundingClientRect();
   if(event.target.tagName==='VIDEO'&&event.clientY>bounds.bottom-64)return;
   navigateMedia(event.clientX<bounds.left+bounds.width/2?-1:1);
 });
+let photoSwipe=null;
+let lastPhotoSwipe=0;
+content.addEventListener('pointerdown',event=>{
+  if(event.pointerType==='touch'&&event.target.tagName==='IMG')photoSwipe={x:event.clientX,y:event.clientY};
+});
+content.addEventListener('pointerup',event=>{
+  if(!photoSwipe)return;
+  const dx=event.clientX-photoSwipe.x,dy=event.clientY-photoSwipe.y;
+  photoSwipe=null;
+  if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.25){lastPhotoSwipe=Date.now();navigateMedia(dx<0?1:-1);}
+});
+content.addEventListener('pointercancel',()=>{photoSwipe=null;});
 content.addEventListener('pointermove',event=>{
   if(!['IMG','VIDEO'].includes(event.target.tagName))return;
   const bounds=event.target.getBoundingClientRect();
