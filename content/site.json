@@ -12,33 +12,33 @@
         "media": [
           {
             "type": "image",
-            "alt": "Yoshi and Moshi seated with a white, gold-horned character in a blue and yellow lounge.",
+            "alt": "Yoshi and Moshi posing with two black artist mannequins.",
             "src": "media/yoshi-moshi-festival-2027-1920.webp",
             "width": 1920,
-            "height": 1276,
+            "height": 1280,
             "variants": [
               {
                 "src": "media/yoshi-moshi-festival-2027-360.webp",
                 "width": 360,
-                "bytes": 19122
+                "bytes": 18132
               },
               {
                 "src": "media/yoshi-moshi-festival-2027-720.webp",
                 "width": 720,
-                "bytes": 51462
+                "bytes": 51588
               },
               {
                 "src": "media/yoshi-moshi-festival-2027-1200.webp",
                 "width": 1200,
-                "bytes": 96872
+                "bytes": 115330
               },
               {
                 "src": "media/yoshi-moshi-festival-2027-1920.webp",
                 "width": 1920,
-                "bytes": 157782
+                "bytes": 245254
               }
             ],
-            "originalBytes": 1103394
+            "originalBytes": 2634404
           }
         ]
       },
@@ -740,7 +740,7 @@
         ]
       },
       {
-        "title": "Last Suppe, Zug (CH)",
+        "title": "LAST SUPPER, Zug (CH)",
         "alt": "Four characters seated together on a table in a gallery.",
         "src": "media/film-still-06-1181.webp",
         "width": 1181,
